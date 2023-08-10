@@ -1,16 +1,6 @@
-# konstantin
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Архитектура
+    1. Разделение на 3 слоя - вью, модель, провайдер
+    2. Все экраны - Screen
+    3. Для каждого экрана своя папка, файл экрана не должен содержать сложных коонструкций
+    4. Есть общий каталог кастомных виджетов
+    5. роутинг через навигатор пуш/пушнеймд
