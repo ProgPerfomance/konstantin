@@ -4,7 +4,7 @@ import 'package:konstantin/view/FavoritScreen/FavoriteScreen.dart';
 import 'package:konstantin/view/ProfileScreen/ProfileScreen.dart';
 import 'package:konstantin/view/StorageScreen/StorageScreen.dart';
 
-import '../MainScreen/CatalogScreen.dart';
+import '../MainScreen/MainScreen.dart';
 
 int _selectIndex = 0;
 List screensList = [
