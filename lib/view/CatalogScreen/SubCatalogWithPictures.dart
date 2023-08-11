@@ -1,5 +1,6 @@
 import 'package:bottom_sheet/bottom_sheet.dart';
 import 'package:flutter/material.dart';
+import 'package:konstantin/view/ItemScreen/ItemScreen.dart';
 
 class SubCatalogWithPicture extends StatefulWidget {
   final ScrollController scrollController;
@@ -60,7 +61,7 @@ class _SubCatalogWithPictureState extends State<SubCatalogWithPicture> {
                       width: MediaQuery.of(context).size.width,
 
                       child: GestureDetector(
-                       // onTap: ()=>_showItem(),
+                        onTap: ()=>_showItem(),
                         child: Row(
                          // crossAxisAlignment: CrossAxisAlignment.stretch,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -129,5 +130,22 @@ class _SubCatalogWithPictureState extends State<SubCatalogWithPicture> {
             ),
           ]),
         ));
+  }
+  void _showItem() {
+    showFlexibleBottomSheet<void>(
+      minHeight: 0,
+      initHeight: 0.9,
+      maxHeight: 1,
+      context: context,
+      isSafeArea: true,
+      bottomSheetColor: Colors.white,
+      builder: (context, controller, offset) {
+        return ItemScreen(
+          scrollController: controller,
+          bottomSheetOffset: offset,
+        );
+      },
+      anchors: [0, 0.9, 1],
+    );
   }
 }
