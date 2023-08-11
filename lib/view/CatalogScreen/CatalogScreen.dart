@@ -59,12 +59,12 @@ onTap: ()=>_showSubCatalog(),
                                    ),
                                    child: Padding(
                                      padding: const EdgeInsets.all(8.0),
-                                     child: Image.network('https://free-png.ru/wp-content/uploads/2022/05/free-png.ru-268-340x280.png'),
+                                     child: Image.network('https://avatars.mds.yandex.net/get-altay/6955494/2a0000018355473c28409dfaec02944c2a96/XXL'),
                                    ),
                                  ),
                                  Padding(
                                    padding: const EdgeInsets.all(8.0),
-                                   child: SizedBox(child: Text('Сладости '), ),
+                                   child: SizedBox(child: Text('Рыба, морепродукты, икра '), ),
                                  ),
 
                                ],
@@ -106,7 +106,7 @@ onTap: ()=>_showSubCatalog(),
   void _showSubCatalog() {
     showFlexibleBottomSheet<void>(
       minHeight: 0,
-      initHeight: 0.5,
+      initHeight: 0.7,
       maxHeight: 1,
       context: context,
       isSafeArea: isUseSafeArea,
@@ -117,7 +117,7 @@ onTap: ()=>_showSubCatalog(),
           bottomSheetOffset: offset,
         );
       },
-      anchors: [0, 0.5, 1],
+      anchors: [0, 0.7, 1],
     );
   }
 }
